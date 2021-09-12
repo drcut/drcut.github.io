@@ -1,48 +1,335 @@
----
-layout: layout
----
-<div class="container">
-  <div class="row">
-    <div class="col-md-3" style="text-align:center;">
-      <div class="avatar">
-        <img class="rounded-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image"
-          style="max-width: 70%; height: auto;">
-      </div>
-      <h5>Ruobing Han</h5>
-      {% include social.html %}
-    </div>
-    <div class="col-md-9">
-      <h1><strong>Hi! I'm Ruobing Han</strong></h1>
-      <p>I am a PhD student at Georgia Institue of Technology, Atlanta, the U.S.
-      </p>
-      <p>I achieved my Computer Science bachelor degree from Peking University in 2018.</p>
-      <p>My interests span the fields of Compiler, Edge training and High-Performance Computing.
-      </p>
-      <p>Now I am working in <a href="http://hparch.gatech.edu/">HPArch </a>, under the supervision of <a href="https://www.cc.gatech.edu/~hyesoon/">Prof. Kim Hyesoon</a></p>
-      <p>Check out my <a href="http://github.com/drcut">Coding Projects</a>.</p>
-      <!--or my <em><a href="{{ site.baseurl }}static/resume.pdf">Curriculum Vitae</a></em>.-->
-      <p> Feel free to contact me. My email address is: hanruobing (at) pku (dot) edu (dot) cn. </p>
-      </br>
-      <h4><strong>Latest Publications</strong></h4>
-      <ul>
-        <li>
-          <p><a href="http://arxiv.org/abs/1911.08907">Auto-Precision Scaling for Distributed Deep Learning</a><br />
-            <b>Ruobing Han</b>, Min Si, James Demmel, Yang You <br />
-            In  Proceedings  of  the  26th  ACM  SIGPLANSymposium on Principles and Practice of Parallel Programming 2021 <br />
-          </p>
-        </li>
-        <li>
-          <!--
-          <p><a href="https://arxiv.org/abs/1902.06855">Optimizing Network Performance for Distributed DNN Training on
-              GPU Clusters: ImageNet/AlexNet Training in 1.5
-              Minutes</a><br />
-            Peng Sun, Wansen Feng, <b>Ruobing Han</b>, Shengen Yan, Yonggang Wen <br />
-            In IEEE Transactions on Big Data 2020 <br />
-          </p>
-          -->
-        </li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ruobing (Robin) Han</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9C1B1EYNC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      </ul>
+      gtag("config", "G-H9C1B1EYNC");
+    </script>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Ruobing (Robin) Han</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile mx-auto mb-2"
+            src="assets/img/id.jpg"
+            alt=""
+        /></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Research Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work-experience"
+              >Working Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publication"
+              >Publication</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <div class="social-icons">
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com/in/ruobing-han-6a8a8215b/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-icon" href="assets/cv/resume_Ruobing.pdf"
+              ><i class="far fa-file"></i
+            ></a>
+          </div>
+          <h1 class="mb-0">Ruobing Han</h1>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <a style="color: #6c757d" href="mailto:hanruobing@gatech.edu"
+              >hanruobing@gatech.edu</a
+            >
+          </div>
+          <p class="lead mb-5"></p>
+          <p id="intro">
+            I am a CS PhD student in Georgia Tech, under the supervision of
+            <a href="https://www.cc.gatech.edu/~hyesoon/">Prof. Hyesoon</a>. My
+            research aresa are compiler, architecture and ML system. I received
+            the B.S. degree from EECS college in Peking University in 2018.
+          </p>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0 education-0">Georgia Institute of Technology</h3>
+              <div class="subheading p-0 education-1">
+                Ph.D. in Computer Science
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">May 2021 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0 education-0">Peking University</h3>
+              <div class="subheading p-0 education-1">
+                Computer Science and Technology
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">Sep 2014 - Aug 2018</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Research Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0 research-0">
+                <a href="http://hparch.gatech.edu/">HPArch</a>, Georgia
+                Institute of Technology
+              </h3>
+              <div class="subheading p-0 research-1">
+                Graduate Research Assistant
+              </div>
+              <p>Advisor: Prof. Hyesoon Kim</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">May 2021 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0 research-0">
+                <a href="https://ai.comp.nus.edu.sg/">HPC-AI</a>, Nation
+                University of Singapore
+              </h3>
+              <div class="subheading p-0 research-1">Research Assistant</div>
+              <p>Advisor: Prof. Yang You</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">May 2020 - Apr 2021</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- work-experience-->
+      <section class="resume-section" id="work-experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Working Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0 research-0">
+                <a href="https://www.sensetime.com/">Sensetime</a>, Beijing,
+                China
+              </h3>
+              <div class="subheading p-0 research-1">
+                Software Development Engineer
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">Aug 2018 - Oct 2020</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Publication-->
+      <section class="resume-section" id="publication">
+        <div class="resume-section-content">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-2">Publication</h3>
+              <ul class="fa-ul mb-0">
+                <li>
+                  <span class="publication-title">
+                    <span class="fa-li"><i class="fas fa-seedling"></i></span>
+                    COX: CUDA on X86 by Exposing Warp-Level Functions to CPUs<br />
+                  </span>
+                  <span class="publication-name">
+                    <b>Ruobing Han</b>, Jaewon Lee, Jaewoong Sim, Hyesoon Kim<br />
+                  </span>
+                  under review, 2021<br />
+                </li>
+                <li>
+                  <span class="publication-title">
+                    <span class="fa-li"><i class="fas fa-seedling"></i></span>
+                    Supporting CUDA for an extended RISC-V GPU architecture<br />
+                  </span>
+                  <span class="publication-name">
+                    <b>Ruobing Han</b>, Blaise Tine, Jaewon Lee, Jaewoong Sim,
+                    Hyesoon Kim<br />
+                  </span>
+                  the Fifth Workshop on RISC-V for ComputerArchitecture
+                  Research, 2021<br />
+                  <a
+                    class="publication-link"
+                    href="https://arxiv.org/abs/2109.00673"
+                    target="_blank"
+                    ><i class="fas fa-file-pdf"></i> paper</a
+                  >&ensp;
+                </li>
+                <li>
+                  <span class="publication-title">
+                    <span class="fa-li"><i class="fas fa-seedling"></i></span>
+                    Dynamic scaling for low-precision learning<br />
+                  </span>
+                  <span class="publication-name">
+                    <b>Ruobing Han</b>, Min Si, James Demmel, Yang You<br />
+                  </span>
+                  the 26th ACM SIGPLAN Symposium on Principles and Practice of
+                  Parallel Programming, 2021<br />
+                  <a
+                    class="publication-link"
+                    href="https://dl.acm.org/doi/abs/10.1145/3437801.3441624"
+                    target="_blank"
+                    ><i class="fas fa-file-pdf"></i> paper</a
+                  >&ensp;
+                </li>
+                <li>
+                  <span class="publication-title">
+                    <span class="fa-li"><i class="fas fa-seedling"></i></span>
+                    Auto-Precision Scaling for Distributed Deep Learning<br />
+                  </span>
+                  <span class="publication-name">
+                    <b>Ruobing Han</b>, James Demmel, Yang You<br />
+                  </span>
+                  International Conference on High Performance Computing,
+                  2021<br />
+                  <a
+                    class="publication-link"
+                    href="https://link.springer.com/chapter/10.1007/978-3-030-78713-4_5"
+                    target="_blank"
+                    ><i class="fas fa-file-pdf"></i> paper</a
+                  >&ensp;
+                </li>
+                <li>
+                  <span class="publication-title">
+                    <span class="fa-li"><i class="fas fa-seedling"></i></span>
+                    Optimizing Network Performance for Distributed DNN Training
+                    on GPU Clusters: ImageNet/AlexNet Training in 1.5 Minutes<br />
+                  </span>
+                  <span class="publication-name">
+                    Peng Sun, Wansen Feng, <b>Ruobing Han</b>, Shengen Yan,
+                    Yonggang Wen<br />
+                  </span>
+                  IEEE Transactions on Big Data, 2020<br />
+                  <a
+                    class="publication-link"
+                    href="https://arxiv.org/abs/1902.06855"
+                    target="_blank"
+                    ><i class="fas fa-file-pdf"></i> paper</a
+                  >&ensp;
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-</div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
